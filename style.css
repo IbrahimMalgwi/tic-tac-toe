@@ -1,0 +1,69 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom right, #3494e6, #ec6ead);
+    font-family: 'Arial', sans-serif;
+}
+
+#game-container {
+    text-align: center;
+}
+
+#game-title {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    /* Adjusted width for each cell */
+    gap: 10px;
+    max-width: 360px;
+    /* Adjusted max-width for a smaller game board */
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background: linear-gradient(to bottom right, #a18cd1, #fbc2eb);
+}
+
+.cell {
+    width: 120px;
+    /* Adjusted width for each cell */
+    height: 120px;
+    /* Adjusted height for each cell */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.cell:hover {
+    background-color: #f0f0f0;
+}
+
+#result-screen {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#result-message {
+    font-size: 24px;
+    margin-bottom:
